@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning Resources | S.A.A.N. LIGTAS?</title>
+  <meta name="description" content="A Web-Based School Hazard Awareness and Interactive Evacuation Mapping Platform for Emergency Preparedness for Alangilan Senior High School, Batangas City, Philippines.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Icons: Font Awesome (CDN). If offline, the site still works; icons just won't show. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <!-- ===== Shared header (same on every page) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="S.A.A.N. LIGTAS? home">
+        <svg class="brand-logo" viewBox="0 0 48 56" role="img" aria-label="S.A.A.N. LIGTAS? shield logo">
+<path d="M24 2 L45 9 L43 30 L24 53 L5 30 L3 9 Z" fill="#A30D16" stroke="#750A10" stroke-width="2"/>
+<path d="M24 6 L41 12 L39 29 L24 48 L9 29 L7 12 Z" fill="none" stroke="#fff" stroke-width="1.2"/>
+<path d="M24 13 C31 22 33 28 31 34 C29 39 26 41 24 42 C22 41 19 39 17 34 C15 28 17 22 24 13 Z" fill="#fff"/>
+<path d="M24 24 C28 29 28.5 33 26.5 36 C25.5 37.5 24.7 38 24 38.5 C23.3 38 22.5 37.5 21.5 36 C19.5 33 20 29 24 24 Z" fill="#C51F27"/>
+</svg>
+        <span>
+          <span class="brand-name">S.A.A.N. LIGTAS?</span>
+          <span class="brand-sub">A Web-Based School Hazard Awareness and Interactive Evacuation Mapping Platform for Emergency Preparedness</span>
+        </span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+        <li><a href="index.html"><i class="fa-solid fa-house" aria-hidden="true"></i> Home</a></li>
+        <li><a href="evacuation-map.html"><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i> Evacuation Map</a></li>
+        <li><a href="safety-protocols.html"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Safety Protocols</a></li>
+        <li><a href="preparedness.html"><i class="fa-solid fa-suitcase-medical" aria-hidden="true"></i> Preparedness</a></li>
+        <li><a href="learning.html" class="active" aria-current="page"><i class="fa-solid fa-book-open" aria-hidden="true"></i> Learning Resources</a></li>
+        <li><a href="quizzes.html"><i class="fa-solid fa-circle-question" aria-hidden="true"></i> Quizzes</a></li>
+        <li><a href="emergency-info.html"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i> Emergency Information</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Learning Resources</div>
+      <h1>Learning Resources</h1>
+      <p>A digital learning center for disaster awareness. Search or filter by topic.</p>
+    </div>
+  </div>
+
+  <main id="main" class="section">
+    <div class="container">
+      <div class="notice info" role="note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+        <div>External cards link to the <strong>homepages</strong> of Philippine government agencies and the Philippine Red Cross, where you can browse their official materials. Cards labeled <em>Sample content</em> are summaries written for this project and are <strong>not officially endorsed</strong>. Thumbnails and links are easy to replace in <code>learning.html</code>.</div></div>
+      <div class="filter-bar no-print">
+        <label class="visually-hidden" for="resource-search">Search learning resources</label>
+        <input type="search" id="resource-search" placeholder="Search resources&hellip;">
+      </div>
+      <div class="filter-bar no-print" role="group" aria-label="Filter by category"><button class="chip active" data-category="all" type="button">All</button><button class="chip" data-category="drrm" type="button">Disaster Risk Reduction and Management</button><button class="chip" data-category="earthquake" type="button">Earthquake Awareness</button><button class="chip" data-category="fire" type="button">Fire Prevention</button><button class="chip" data-category="flood" type="button">Flood and Typhoon Preparedness</button><button class="chip" data-category="firstaid" type="button">Emergency First Aid Awareness</button><button class="chip" data-category="school" type="button">School Safety and Evacuation</button></div>
+      <div class="grid grid-3" id="resource-grid">
+        <article class="card resource-card reveal" data-category="drrm">
+          <div class="resource-thumb" role="img" aria-label="Disaster Risk Reduction and Management thumbnail placeholder (replaceable)"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+          <p style="margin-bottom:.4rem"><span class="tag">Disaster Risk Reduction and Management</span> <span class="tag">Agency homepage</span></p>
+          <h3>NDRRMC (National Disaster Risk Reduction and Management Council)</h3>
+          <p>National agency website for disaster updates and DRRM information.</p>
+          <a class="btn small" href="https://ndrrmc.gov.ph/" target="_blank" rel="noopener noreferrer">Open official website <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </article>
+        <article class="card resource-card reveal" data-category="drrm">
+          <div class="resource-thumb" role="img" aria-label="Disaster Risk Reduction and Management thumbnail placeholder (replaceable)"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+          <p style="margin-bottom:.4rem"><span class="tag">Disaster Risk Reduction and Management</span> <span class="tag">Agency homepage</span></p>
+          <h3>Office of Civil Defense (OCD)</h3>
+          <p>Civil defense and disaster risk reduction information from the national government.</p>
+          <a class="btn small" href="https://www.ocd.gov.ph/" target="_blank" rel="noopener noreferrer">Open official website <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </article>
+        <article class="card resource-card reveal" data-category="earthquake">
+          <div class="resource-thumb" role="img" aria-label="Earthquake Awareness thumbnail placeholder (replaceable)"><i class="fa-solid fa-house-crack" aria-hidden="true"></i></div>
+          <p style="margin-bottom:.4rem"><span class="tag">Earthquake Awareness</span> <span class="tag">Agency homepage</span></p>
+          <h3>PHIVOLCS</h3>
+          <p>Official source for earthquake, tsunami, and volcano information in the Philippines.</p>
+          <a class="btn small" href="https://www.phivolcs.dost.gov.ph/" target="_blank" rel="noopener noreferrer">Open official website <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </article>
+        <article class="card resource-card reveal" data-category="earthquake">
+          <div class="resource-thumb" role="img" aria-label="Earthquake Awareness thumbnail placeholder (replaceable)"><i class="fa-solid fa-house-crack" aria-hidden="true"></i></div>
+          <p style="margin-bottom:.4rem"><span class="tag">Earthquake Awareness</span> <span class="tag sample">Sample content</span></p>
+          <h3>Earthquake safety summary (this site)</h3>
+          <p>Sample summary of before, during, and after steps. Not an official publication.</p>
+          <a class="btn small outline" href="safety-protocols.html#earthquake">Read more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </article>
+        <article class="card resource-card reveal" data-category="fire">
+          <div class="resource-thumb" role="img" aria-label="Fire Prevention thumbnail placeholder (replaceable)"><i class="fa-solid fa-fire-flame-curved" aria-hidden="true"></i></div>
+          <p style="margin-bottom:.4rem"><span class="tag">Fire Prevention</span> <span class="tag">Agency homepage</span></p>
+          <h3>Bureau of Fire Protection (BFP)</h3>
+          <p>Fire prevention and safety information from the national fire service.</p>
+          <a class="btn small" href="https://bfp.gov.ph/" target="_blank" rel="noopener noreferrer">Open official website <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </article>
+        <article class="card resource-card reveal" data-category="fire">
+          <div class="resource-thumb" role="img" aria-label="Fire Prevention thumbnail placeholder (replaceable)"><i class="fa-solid fa-fire-flame-curved" aria-hidden="true"></i></div>
+          <p style="margin-bottom:.4rem"><span class="tag">Fire Prevention</span> <span class="tag sample">Sample content</span></p>
+          <h3>Fire safety summary (this site)</h3>
+          <p>Sample summary of fire safety steps. Not an official publication.</p>
+          <a class="btn small outline" href="safety-protocols.html#fire">Read more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </article>
+        <article class="card resource-card reveal" data-category="flood">
+          <div class="resource-thumb" role="img" aria-label="Flood and Typhoon Preparedness thumbnail placeholder (replaceable)"><i class="fa-solid fa-cloud-showers-heavy" aria-hidden="true"></i></div>
+          <p style="margin-bottom:.4rem"><span class="tag">Flood and Typhoon Preparedness</span> <span class="tag">Agency homepage</span></p>
+          <h3>PAGASA</h3>
+          <p>Official weather forecasts, tropical cyclone bulletins, and flood information.</p>
+          <a class="btn small" href="https://www.pagasa.dost.gov.ph/" target="_blank" rel="noopener noreferrer">Open official website <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </article>
+        <article class="card resource-card reveal" data-category="flood">
+          <div class="resource-thumb" role="img" aria-label="Flood and Typhoon Preparedness thumbnail placeholder (replaceable)"><i class="fa-solid fa-cloud-showers-heavy" aria-hidden="true"></i></div>
+          <p style="margin-bottom:.4rem"><span class="tag">Flood and Typhoon Preparedness</span> <span class="tag sample">Sample content</span></p>
+          <h3>Flood and typhoon summary (this site)</h3>
+          <p>Sample summaries for flood and typhoon safety. Not official publications.</p>
+          <a class="btn small outline" href="safety-protocols.html#flood">Read more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </article>
+        <article class="card resource-card reveal" data-category="firstaid">
+          <div class="resource-thumb" role="img" aria-label="Emergency First Aid Awareness thumbnail placeholder (replaceable)"><i class="fa-solid fa-kit-medical" aria-hidden="true"></i></div>
+          <p style="margin-bottom:.4rem"><span class="tag">Emergency First Aid Awareness</span> <span class="tag">Agency homepage</span></p>
+          <h3>Philippine Red Cross</h3>
+          <p>Humanitarian organization offering first aid and disaster-preparedness information and training.</p>
+          <a class="btn small" href="https://redcross.org.ph/" target="_blank" rel="noopener noreferrer">Open official website <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </article>
+        <article class="card resource-card reveal" data-category="firstaid">
+          <div class="resource-thumb" role="img" aria-label="Emergency First Aid Awareness thumbnail placeholder (replaceable)"><i class="fa-solid fa-kit-medical" aria-hidden="true"></i></div>
+          <p style="margin-bottom:.4rem"><span class="tag">Emergency First Aid Awareness</span> <span class="tag">Agency homepage</span></p>
+          <h3>Department of Health (DOH)</h3>
+          <p>National health agency for health advisories and public health information.</p>
+          <a class="btn small" href="https://doh.gov.ph/" target="_blank" rel="noopener noreferrer">Open official website <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </article>
+        <article class="card resource-card reveal" data-category="school">
+          <div class="resource-thumb" role="img" aria-label="School Safety and Evacuation thumbnail placeholder (replaceable)"><i class="fa-solid fa-school" aria-hidden="true"></i></div>
+          <p style="margin-bottom:.4rem"><span class="tag">School Safety and Evacuation</span> <span class="tag">Agency homepage</span></p>
+          <h3>Department of Education (DepEd)</h3>
+          <p>Education department website. Look here for school DRRM guidance and memoranda.</p>
+          <a class="btn small" href="https://www.deped.gov.ph/" target="_blank" rel="noopener noreferrer">Open official website <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </article>
+        <article class="card resource-card reveal" data-category="school">
+          <div class="resource-thumb" role="img" aria-label="School Safety and Evacuation thumbnail placeholder (replaceable)"><i class="fa-solid fa-school" aria-hidden="true"></i></div>
+          <p style="margin-bottom:.4rem"><span class="tag">School Safety and Evacuation</span> <span class="tag sample">Sample content</span></p>
+          <h3>General campus emergency summary (this site)</h3>
+          <p>Sample summary of evacuation behavior at school. Not an official publication.</p>
+          <a class="btn small outline" href="safety-protocols.html#general">Read more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </article>
+      </div>
+      <p class="empty-state" id="resource-empty" hidden><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> No resources match your search or filter. Try a different word or choose &ldquo;All&rdquo;.</p>
+    </div>
+  </main>
+
+  <!-- ===== Shared footer (same on every page) ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>S.A.A.N. LIGTAS?</h3>
+        <p>Alangilan Senior High School<br>Batangas City, Philippines</p>
+        <p class="footer-tagline">&ldquo;Prepared Today. Safer Tomorrow.&rdquo;</p>
+      </div>
+      <div>
+        <h3>Quick links</h3>
+        <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="evacuation-map.html">Evacuation Map</a></li>
+        <li><a href="safety-protocols.html">Safety Protocols</a></li>
+        <li><a href="preparedness.html">Preparedness</a></li>
+        <li><a href="learning.html">Learning Resources</a></li>
+        <li><a href="quizzes.html">Quizzes</a></li>
+        <li><a href="emergency-info.html">Emergency Information</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      &copy; <span id="year">2026</span> S.A.A.N. LIGTAS? &mdash; An academic research project. Not an official government or school publication.
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+</body>
+</html>

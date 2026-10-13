@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emergency Information | S.A.A.N. LIGTAS?</title>
+  <meta name="description" content="A Web-Based School Hazard Awareness and Interactive Evacuation Mapping Platform for Emergency Preparedness for Alangilan Senior High School, Batangas City, Philippines.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Icons: Font Awesome (CDN). If offline, the site still works; icons just won't show. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <!-- ===== Shared header (same on every page) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="S.A.A.N. LIGTAS? home">
+        <svg class="brand-logo" viewBox="0 0 48 56" role="img" aria-label="S.A.A.N. LIGTAS? shield logo">
+<path d="M24 2 L45 9 L43 30 L24 53 L5 30 L3 9 Z" fill="#A30D16" stroke="#750A10" stroke-width="2"/>
+<path d="M24 6 L41 12 L39 29 L24 48 L9 29 L7 12 Z" fill="none" stroke="#fff" stroke-width="1.2"/>
+<path d="M24 13 C31 22 33 28 31 34 C29 39 26 41 24 42 C22 41 19 39 17 34 C15 28 17 22 24 13 Z" fill="#fff"/>
+<path d="M24 24 C28 29 28.5 33 26.5 36 C25.5 37.5 24.7 38 24 38.5 C23.3 38 22.5 37.5 21.5 36 C19.5 33 20 29 24 24 Z" fill="#C51F27"/>
+</svg>
+        <span>
+          <span class="brand-name">S.A.A.N. LIGTAS?</span>
+          <span class="brand-sub">A Web-Based School Hazard Awareness and Interactive Evacuation Mapping Platform for Emergency Preparedness</span>
+        </span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+        <li><a href="index.html"><i class="fa-solid fa-house" aria-hidden="true"></i> Home</a></li>
+        <li><a href="evacuation-map.html"><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i> Evacuation Map</a></li>
+        <li><a href="safety-protocols.html"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Safety Protocols</a></li>
+        <li><a href="preparedness.html"><i class="fa-solid fa-suitcase-medical" aria-hidden="true"></i> Preparedness</a></li>
+        <li><a href="learning.html"><i class="fa-solid fa-book-open" aria-hidden="true"></i> Learning Resources</a></li>
+        <li><a href="quizzes.html"><i class="fa-solid fa-circle-question" aria-hidden="true"></i> Quizzes</a></li>
+        <li><a href="emergency-info.html" class="active" aria-current="page"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i> Emergency Information</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Emergency Information</div>
+      <h1>Emergency Information</h1>
+      <p>A directory of school and local emergency contacts. Details stay as placeholders until they are verified.</p>
+    </div>
+  </div>
+
+  <main id="main" class="section">
+    <div class="container">
+      <div class="notice danger" role="alert"><i class="fa-solid fa-phone-slash" aria-hidden="true"></i>
+        <div><strong>No contact numbers have been verified yet.</strong> This site does not list any phone numbers or emails as real emergency contacts. Ask the school administration and the appropriate government agencies for confirmed details, add them to <code>emergency-info.html</code>, and record the date checked below. In a real emergency, use the official emergency procedure of your school and local government.</div></div>
+      <div class="grid grid-2">
+        <article class="card card-with-bar contact-card reveal">
+          <h2 class="section-bar" style="font-size:.95rem"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> School Administration</h2>
+          <div class="card-body">
+            <dl>
+              <dt>Phone</dt><dd><span class="placeholder-val">[Not yet verified]</span></dd>
+              <dt>Email</dt><dd><span class="placeholder-val">[Not yet verified]</span></dd>
+              <dt>Location</dt><dd>Alangilan Senior High School, Batangas City</dd>
+            </dl>
+            <!-- WHEN VERIFIED, replace the placeholders above with links, for example:
+                 Phone: <a href="tel:+63XXXXXXXXXX">+63 XXX XXX XXXX</a>
+                 Email: <a href="mailto:name@example.com">name@example.com</a>
+                 Only use numbers and addresses confirmed by the school or the agency. -->
+          </div>
+        </article>
+        <article class="card card-with-bar contact-card reveal">
+          <h2 class="section-bar" style="font-size:.95rem"><i class="fa-solid fa-kit-medical" aria-hidden="true"></i> School Clinic / First-Aid Contact</h2>
+          <div class="card-body">
+            <dl>
+              <dt>Phone</dt><dd><span class="placeholder-val">[Not yet verified]</span></dd>
+              <dt>Email</dt><dd><span class="placeholder-val">[Not yet verified]</span></dd>
+              <dt>Location</dt><dd><span class="placeholder-val">To be confirmed by the school</span></dd>
+            </dl>
+            <!-- WHEN VERIFIED, replace the placeholders above with links, for example:
+                 Phone: <a href="tel:+63XXXXXXXXXX">+63 XXX XXX XXXX</a>
+                 Email: <a href="mailto:name@example.com">name@example.com</a>
+                 Only use numbers and addresses confirmed by the school or the agency. -->
+          </div>
+        </article>
+        <article class="card card-with-bar contact-card reveal">
+          <h2 class="section-bar" style="font-size:.95rem"><i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i> Guidance Office</h2>
+          <div class="card-body">
+            <dl>
+              <dt>Phone</dt><dd><span class="placeholder-val">[Not yet verified]</span></dd>
+              <dt>Email</dt><dd><span class="placeholder-val">[Not yet verified]</span></dd>
+              <dt>Location</dt><dd>Alangilan Senior High School, Batangas City</dd>
+            </dl>
+            <!-- WHEN VERIFIED, replace the placeholders above with links, for example:
+                 Phone: <a href="tel:+63XXXXXXXXXX">+63 XXX XXX XXXX</a>
+                 Email: <a href="mailto:name@example.com">name@example.com</a>
+                 Only use numbers and addresses confirmed by the school or the agency. -->
+          </div>
+        </article>
+        <article class="card card-with-bar contact-card reveal">
+          <h2 class="section-bar" style="font-size:.95rem"><i class="fa-solid fa-user-shield" aria-hidden="true"></i> School Security</h2>
+          <div class="card-body">
+            <dl>
+              <dt>Phone</dt><dd><span class="placeholder-val">[Not yet verified]</span></dd>
+              <dt>Email</dt><dd><span class="placeholder-val">[Not yet verified]</span></dd>
+              <dt>Location</dt><dd>Alangilan Senior High School, Batangas City</dd>
+            </dl>
+            <!-- WHEN VERIFIED, replace the placeholders above with links, for example:
+                 Phone: <a href="tel:+63XXXXXXXXXX">+63 XXX XXX XXXX</a>
+                 Email: <a href="mailto:name@example.com">name@example.com</a>
+                 Only use numbers and addresses confirmed by the school or the agency. -->
+          </div>
+        </article>
+        <article class="card card-with-bar contact-card reveal">
+          <h2 class="section-bar" style="font-size:.95rem"><i class="fa-solid fa-people-group" aria-hidden="true"></i> Local Disaster Risk Reduction and Management Office</h2>
+          <div class="card-body">
+            <dl>
+              <dt>Phone</dt><dd><span class="placeholder-val">[Not yet verified]</span></dd>
+              <dt>Email</dt><dd><span class="placeholder-val">[Not yet verified]</span></dd>
+              <dt>Location</dt><dd><span class="placeholder-val">Batangas City (office to be verified)</span></dd>
+            </dl>
+            <!-- WHEN VERIFIED, replace the placeholders above with links, for example:
+                 Phone: <a href="tel:+63XXXXXXXXXX">+63 XXX XXX XXXX</a>
+                 Email: <a href="mailto:name@example.com">name@example.com</a>
+                 Only use numbers and addresses confirmed by the school or the agency. -->
+          </div>
+        </article>
+        <article class="card card-with-bar contact-card reveal">
+          <h2 class="section-bar" style="font-size:.95rem"><i class="fa-solid fa-fire-extinguisher" aria-hidden="true"></i> Fire Protection Services</h2>
+          <div class="card-body">
+            <dl>
+              <dt>Phone</dt><dd><span class="placeholder-val">[Not yet verified]</span></dd>
+              <dt>Email</dt><dd><span class="placeholder-val">[Not yet verified]</span></dd>
+              <dt>Location</dt><dd><span class="placeholder-val">Batangas City (station to be verified)</span></dd>
+            </dl>
+            <!-- WHEN VERIFIED, replace the placeholders above with links, for example:
+                 Phone: <a href="tel:+63XXXXXXXXXX">+63 XXX XXX XXXX</a>
+                 Email: <a href="mailto:name@example.com">name@example.com</a>
+                 Only use numbers and addresses confirmed by the school or the agency. -->
+          </div>
+        </article>
+        <article class="card card-with-bar contact-card reveal">
+          <h2 class="section-bar" style="font-size:.95rem"><i class="fa-solid fa-handcuffs" aria-hidden="true"></i> Police</h2>
+          <div class="card-body">
+            <dl>
+              <dt>Phone</dt><dd><span class="placeholder-val">[Not yet verified]</span></dd>
+              <dt>Email</dt><dd><span class="placeholder-val">[Not yet verified]</span></dd>
+              <dt>Location</dt><dd><span class="placeholder-val">Batangas City (station to be verified)</span></dd>
+            </dl>
+            <!-- WHEN VERIFIED, replace the placeholders above with links, for example:
+                 Phone: <a href="tel:+63XXXXXXXXXX">+63 XXX XXX XXXX</a>
+                 Email: <a href="mailto:name@example.com">name@example.com</a>
+                 Only use numbers and addresses confirmed by the school or the agency. -->
+          </div>
+        </article>
+        <article class="card card-with-bar contact-card reveal">
+          <h2 class="section-bar" style="font-size:.95rem"><i class="fa-solid fa-hospital" aria-hidden="true"></i> Local Health Services</h2>
+          <div class="card-body">
+            <dl>
+              <dt>Phone</dt><dd><span class="placeholder-val">[Not yet verified]</span></dd>
+              <dt>Email</dt><dd><span class="placeholder-val">[Not yet verified]</span></dd>
+              <dt>Location</dt><dd><span class="placeholder-val">Batangas City (facility to be verified)</span></dd>
+            </dl>
+            <!-- WHEN VERIFIED, replace the placeholders above with links, for example:
+                 Phone: <a href="tel:+63XXXXXXXXXX">+63 XXX XXX XXXX</a>
+                 Email: <a href="mailto:name@example.com">name@example.com</a>
+                 Only use numbers and addresses confirmed by the school or the agency. -->
+          </div>
+        </article>
+      </div>
+
+      <section class="card card-with-bar" style="margin-top:2rem" aria-labelledby="src-title">
+        <h2 class="section-bar" id="src-title"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i> Sources &amp; Verification</h2>
+        <div class="card-body">
+          <p>Where each contact should come from:</p>
+          <ul>
+            <li><strong>School contacts:</strong> the Alangilan Senior High School administration.</li>
+            <li><strong>Local DRRM, fire, police, and health contacts:</strong> the Batangas City local government and the agencies' own official channels.</li>
+          </ul>
+          <table style="border-collapse:collapse;width:100%;max-width:520px;font-size:.92rem">
+            <tr><th style="text-align:left;padding:.4rem;border-bottom:1px solid var(--gray)">Last verified</th><td style="padding:.4rem;border-bottom:1px solid var(--gray)"><span class="placeholder-val">[Date not yet recorded]</span></td></tr>
+            <tr><th style="text-align:left;padding:.4rem">Verified by</th><td style="padding:.4rem"><span class="placeholder-val">[Name / office]</span></td></tr>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ===== Shared footer (same on every page) ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>S.A.A.N. LIGTAS?</h3>
+        <p>Alangilan Senior High School<br>Batangas City, Philippines</p>
+        <p class="footer-tagline">&ldquo;Prepared Today. Safer Tomorrow.&rdquo;</p>
+      </div>
+      <div>
+        <h3>Quick links</h3>
+        <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="evacuation-map.html">Evacuation Map</a></li>
+        <li><a href="safety-protocols.html">Safety Protocols</a></li>
+        <li><a href="preparedness.html">Preparedness</a></li>
+        <li><a href="learning.html">Learning Resources</a></li>
+        <li><a href="quizzes.html">Quizzes</a></li>
+        <li><a href="emergency-info.html">Emergency Information</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      &copy; <span id="year">2026</span> S.A.A.N. LIGTAS? &mdash; An academic research project. Not an official government or school publication.
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+</body>
+</html>

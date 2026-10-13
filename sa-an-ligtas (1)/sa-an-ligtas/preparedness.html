@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Preparedness | S.A.A.N. LIGTAS?</title>
+  <meta name="description" content="A Web-Based School Hazard Awareness and Interactive Evacuation Mapping Platform for Emergency Preparedness for Alangilan Senior High School, Batangas City, Philippines.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Icons: Font Awesome (CDN). If offline, the site still works; icons just won't show. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <!-- ===== Shared header (same on every page) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="S.A.A.N. LIGTAS? home">
+        <svg class="brand-logo" viewBox="0 0 48 56" role="img" aria-label="S.A.A.N. LIGTAS? shield logo">
+<path d="M24 2 L45 9 L43 30 L24 53 L5 30 L3 9 Z" fill="#A30D16" stroke="#750A10" stroke-width="2"/>
+<path d="M24 6 L41 12 L39 29 L24 48 L9 29 L7 12 Z" fill="none" stroke="#fff" stroke-width="1.2"/>
+<path d="M24 13 C31 22 33 28 31 34 C29 39 26 41 24 42 C22 41 19 39 17 34 C15 28 17 22 24 13 Z" fill="#fff"/>
+<path d="M24 24 C28 29 28.5 33 26.5 36 C25.5 37.5 24.7 38 24 38.5 C23.3 38 22.5 37.5 21.5 36 C19.5 33 20 29 24 24 Z" fill="#C51F27"/>
+</svg>
+        <span>
+          <span class="brand-name">S.A.A.N. LIGTAS?</span>
+          <span class="brand-sub">A Web-Based School Hazard Awareness and Interactive Evacuation Mapping Platform for Emergency Preparedness</span>
+        </span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+        <li><a href="index.html"><i class="fa-solid fa-house" aria-hidden="true"></i> Home</a></li>
+        <li><a href="evacuation-map.html"><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i> Evacuation Map</a></li>
+        <li><a href="safety-protocols.html"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Safety Protocols</a></li>
+        <li><a href="preparedness.html" class="active" aria-current="page"><i class="fa-solid fa-suitcase-medical" aria-hidden="true"></i> Preparedness</a></li>
+        <li><a href="learning.html"><i class="fa-solid fa-book-open" aria-hidden="true"></i> Learning Resources</a></li>
+        <li><a href="quizzes.html"><i class="fa-solid fa-circle-question" aria-hidden="true"></i> Quizzes</a></li>
+        <li><a href="emergency-info.html"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i> Emergency Information</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Preparedness</div>
+      <h1>Preparedness</h1>
+      <p>Tick off each task to build your readiness. Your progress is saved on this device only.</p>
+    </div>
+  </div>
+
+  <main id="main" class="section">
+    <div class="container">
+      <p class="print-only"><strong>S.A.A.N. LIGTAS? &mdash; Preparedness Checklist</strong> (Alangilan Senior High School, Batangas City)</p>
+      <div class="notice info" role="note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+        <div><span class="scope-label scope-general">General recommendation</span> items are common preparedness advice for any household or student.
+        <span class="scope-label scope-school">School-specific</span> items depend on your school's own procedures and must be confirmed with the school administration.</div></div>
+      <div class="progress-wrap">
+        <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem;align-items:center">
+          <strong id="progress-label" aria-live="polite">0% complete</strong>
+          <span class="no-print">
+            <button class="btn small outline" id="print-checklist" type="button"><i class="fa-solid fa-print" aria-hidden="true"></i> Print checklist</button>
+            <button class="btn small" id="reset-checklist" type="button"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i> Reset checklist</button>
+          </span>
+        </div>
+        <div class="progress-bar" id="progress-track" role="progressbar" aria-label="Checklist progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+      </div>
+      <p class="no-print" style="font-size:.85rem;color:var(--text-soft);margin-top:.8rem"><i class="fa-solid fa-lock" aria-hidden="true"></i> Only your ticked boxes are saved in your browser (localStorage). No personal or medical information is collected or sent anywhere.</p>
+      <div style="margin-top:1rem">
+      <section class="card check-group reveal">
+        <h2 style="font-size:1.15rem;color:var(--red-dark)"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i> Emergency go-bag checklist <span class="scope-label scope-general">General recommendation</span></h2>
+        <label class="check-item"><input type="checkbox" id="task-1"><span>Drinking water in a sealed bottle</span></label>
+        <label class="check-item"><input type="checkbox" id="task-2"><span>Ready-to-eat food that does not spoil</span></label>
+        <label class="check-item"><input type="checkbox" id="task-3"><span>Flashlight and spare batteries</span></label>
+        <label class="check-item"><input type="checkbox" id="task-4"><span>Whistle to signal for help</span></label>
+        <label class="check-item"><input type="checkbox" id="task-5"><span>Basic first-aid kit</span></label>
+        <label class="check-item"><input type="checkbox" id="task-6"><span>Needed personal medicines (kept privately, not entered on this site)</span></label>
+        <label class="check-item"><input type="checkbox" id="task-7"><span>Copies of important IDs in a waterproof bag</span></label>
+        <label class="check-item"><input type="checkbox" id="task-8"><span>Small cash</span></label>
+        <label class="check-item"><input type="checkbox" id="task-9"><span>Charged power bank and phone cable</span></label>
+        <label class="check-item"><input type="checkbox" id="task-10"><span>Face masks and hygiene items</span></label>
+        <label class="check-item"><input type="checkbox" id="task-11"><span>Change of clothes</span></label>
+        <label class="check-item"><input type="checkbox" id="task-12"><span>Battery-powered radio (if available)</span></label>
+      </section>
+      <section class="card check-group reveal">
+        <h2 style="font-size:1.15rem;color:var(--red-dark)"><i class="fa-solid fa-person-walking-luggage" aria-hidden="true"></i> Personal emergency supplies <span class="scope-label scope-general">General recommendation</span></h2>
+        <label class="check-item"><input type="checkbox" id="task-13"><span>Reusable water container</span></label>
+        <label class="check-item"><input type="checkbox" id="task-14"><span>Raincoat or poncho</span></label>
+        <label class="check-item"><input type="checkbox" id="task-15"><span>Sturdy closed shoes kept near your bed</span></label>
+        <label class="check-item"><input type="checkbox" id="task-16"><span>Notebook and pen</span></label>
+        <label class="check-item"><input type="checkbox" id="task-17"><span>Emergency contact numbers written on paper</span></label>
+      </section>
+      <section class="card check-group reveal">
+        <h2 style="font-size:1.15rem;color:var(--red-dark)"><i class="fa-solid fa-people-roof" aria-hidden="true"></i> Family emergency communication plan <span class="scope-label scope-general">General recommendation</span></h2>
+        <label class="check-item"><input type="checkbox" id="task-18"><span>Agree on a meeting place near home</span></label>
+        <label class="check-item"><input type="checkbox" id="task-19"><span>Agree on a second meeting place outside your neighborhood</span></label>
+        <label class="check-item"><input type="checkbox" id="task-20"><span>Choose a relative or friend outside the area as a contact person</span></label>
+        <label class="check-item"><input type="checkbox" id="task-21"><span>Write down everyone's numbers on paper</span></label>
+        <label class="check-item"><input type="checkbox" id="task-22"><span>Discuss how your family will get news and where you would evacuate</span></label>
+        <label class="check-item"><input type="checkbox" id="task-23"><span>Practice the plan with your family</span></label>
+      </section>
+      <section class="card check-group reveal">
+        <h2 style="font-size:1.15rem;color:var(--red-dark)"><i class="fa-solid fa-school-flag" aria-hidden="true"></i> School evacuation preparation <span class="scope-label scope-school">School-specific &mdash; verify with school</span></h2>
+        <label class="check-item"><input type="checkbox" id="task-24"><span>Learn the two nearest exits from each of your classrooms</span></label>
+        <label class="check-item"><input type="checkbox" id="task-25"><span>Know the location of your school's assembly area</span></label>
+        <label class="check-item"><input type="checkbox" id="task-26"><span>Know the sound of your school's emergency alarm</span></label>
+        <label class="check-item"><input type="checkbox" id="task-27"><span>Take part in every school drill</span></label>
+        <label class="check-item"><input type="checkbox" id="task-28"><span>Know your class's headcount procedure</span></label>
+        <label class="check-item"><input type="checkbox" id="task-29"><span>Follow the instructions of teachers and school authorities</span></label>
+      </section>
+      <section class="card check-group reveal">
+        <h2 style="font-size:1.15rem;color:var(--red-dark)"><i class="fa-solid fa-address-book" aria-hidden="true"></i> Emergency contact preparation <span class="scope-label scope-school">School-specific &mdash; verify with school</span></h2>
+        <label class="check-item"><input type="checkbox" id="task-30"><span>Get verified school emergency contacts from the school administration</span></label>
+        <label class="check-item"><input type="checkbox" id="task-31"><span>Get verified local DRRM, fire, police, and health contacts</span></label>
+        <label class="check-item"><input type="checkbox" id="task-32"><span>Save the verified numbers in your phone</span></label>
+        <label class="check-item"><input type="checkbox" id="task-33"><span>Keep a paper copy in your bag</span></label>
+        <label class="check-item"><input type="checkbox" id="task-34"><span>Share the list with your family</span></label>
+      </section>
+      <section class="card check-group reveal">
+        <h2 style="font-size:1.15rem;color:var(--red-dark)"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Disaster readiness tips <span class="scope-label scope-general">General recommendation</span></h2>
+        <label class="check-item"><input type="checkbox" id="task-35"><span>Follow official weather and earthquake updates</span></label>
+        <label class="check-item"><input type="checkbox" id="task-36"><span>Learn basic first aid</span></label>
+        <label class="check-item"><input type="checkbox" id="task-37"><span>Know your barangay's evacuation center</span></label>
+        <label class="check-item"><input type="checkbox" id="task-38"><span>Keep your phone charged when a storm or warning is expected</span></label>
+        <label class="check-item"><input type="checkbox" id="task-39"><span>Review this checklist every few months</span></label>
+      </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== Shared footer (same on every page) ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>S.A.A.N. LIGTAS?</h3>
+        <p>Alangilan Senior High School<br>Batangas City, Philippines</p>
+        <p class="footer-tagline">&ldquo;Prepared Today. Safer Tomorrow.&rdquo;</p>
+      </div>
+      <div>
+        <h3>Quick links</h3>
+        <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="evacuation-map.html">Evacuation Map</a></li>
+        <li><a href="safety-protocols.html">Safety Protocols</a></li>
+        <li><a href="preparedness.html">Preparedness</a></li>
+        <li><a href="learning.html">Learning Resources</a></li>
+        <li><a href="quizzes.html">Quizzes</a></li>
+        <li><a href="emergency-info.html">Emergency Information</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      &copy; <span id="year">2026</span> S.A.A.N. LIGTAS? &mdash; An academic research project. Not an official government or school publication.
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+  <script src="js/preparedness.js"></script>
+</body>
+</html>

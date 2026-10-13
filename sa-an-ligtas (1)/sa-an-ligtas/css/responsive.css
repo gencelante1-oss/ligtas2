@@ -1,0 +1,58 @@
+/* ==========================================================
+   S.A.A.N. LIGTAS? — Responsive rules
+   Breakpoints: tablet <= 1024px, mobile <= 760px, small <= 480px
+   Plus print styles for the printable checklist.
+   ========================================================== */
+
+@media (max-width: 1024px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .map-layout { grid-template-columns: 1fr; }
+  .map-sidebar { grid-template-columns: repeat(2, 1fr); }
+  #map { height: 520px; }
+  .brand-sub { display: none; }
+}
+
+@media (max-width: 760px) {
+  /* Mobile menu: hamburger toggles .open on the nav */
+  .nav-toggle { display: block; }
+  .header-inner { flex-wrap: wrap; }
+  .main-nav { width: 100%; display: none; }
+  .main-nav.open { display: block; }
+  .main-nav ul { flex-direction: column; padding-bottom: .6rem; }
+  .main-nav a { padding: .7rem .8rem; }
+
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .map-sidebar { grid-template-columns: 1fr; }
+  .phase-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .hero-inner { padding: 2.8rem 0 3.2rem; }
+  #map { height: 440px; }
+  .progress-wrap { top: 70px; }
+  .filter-bar input[type="search"], .filter-bar select, .map-controls input[type="search"] { min-width: 0; width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .footer-links { columns: 1; }
+  .contact-card dl { grid-template-columns: 1fr; }
+  .hero-actions .btn { width: 100%; justify-content: center; }
+  .accordion-btn { font-size: .98rem; }
+}
+
+/* ---------- Print: used by the "Print checklist" button ---------- */
+@media print {
+  .site-header, .site-footer, .back-to-top, .page-header .breadcrumb,
+  .no-print, .progress-wrap button { display: none !important; }
+  body { background: #fff; font-size: 12pt; }
+  .card, .check-group { box-shadow: none; border: 0; break-inside: avoid; }
+  .page-header { background: none; color: #000; padding: 0 0 .5rem; border-bottom: 2px solid #000; }
+  .progress-wrap { position: static; box-shadow: none; }
+  .print-only { display: block !important; }
+  a { color: #000; text-decoration: none; }
+}
+.print-only { display: none; }
+
+/* Homepage map preview: stack the legend under the map on narrow screens */
+@media (max-width: 900px) {
+  #home-map-grid { grid-template-columns: 1fr !important; }
+}

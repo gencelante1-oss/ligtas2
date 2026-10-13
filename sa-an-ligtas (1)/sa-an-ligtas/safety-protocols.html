@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Safety Protocols | S.A.A.N. LIGTAS?</title>
+  <meta name="description" content="A Web-Based School Hazard Awareness and Interactive Evacuation Mapping Platform for Emergency Preparedness for Alangilan Senior High School, Batangas City, Philippines.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Icons: Font Awesome (CDN). If offline, the site still works; icons just won't show. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <!-- ===== Shared header (same on every page) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="S.A.A.N. LIGTAS? home">
+        <svg class="brand-logo" viewBox="0 0 48 56" role="img" aria-label="S.A.A.N. LIGTAS? shield logo">
+<path d="M24 2 L45 9 L43 30 L24 53 L5 30 L3 9 Z" fill="#A30D16" stroke="#750A10" stroke-width="2"/>
+<path d="M24 6 L41 12 L39 29 L24 48 L9 29 L7 12 Z" fill="none" stroke="#fff" stroke-width="1.2"/>
+<path d="M24 13 C31 22 33 28 31 34 C29 39 26 41 24 42 C22 41 19 39 17 34 C15 28 17 22 24 13 Z" fill="#fff"/>
+<path d="M24 24 C28 29 28.5 33 26.5 36 C25.5 37.5 24.7 38 24 38.5 C23.3 38 22.5 37.5 21.5 36 C19.5 33 20 29 24 24 Z" fill="#C51F27"/>
+</svg>
+        <span>
+          <span class="brand-name">S.A.A.N. LIGTAS?</span>
+          <span class="brand-sub">A Web-Based School Hazard Awareness and Interactive Evacuation Mapping Platform for Emergency Preparedness</span>
+        </span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+        <li><a href="index.html"><i class="fa-solid fa-house" aria-hidden="true"></i> Home</a></li>
+        <li><a href="evacuation-map.html"><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i> Evacuation Map</a></li>
+        <li><a href="safety-protocols.html" class="active" aria-current="page"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Safety Protocols</a></li>
+        <li><a href="preparedness.html"><i class="fa-solid fa-suitcase-medical" aria-hidden="true"></i> Preparedness</a></li>
+        <li><a href="learning.html"><i class="fa-solid fa-book-open" aria-hidden="true"></i> Learning Resources</a></li>
+        <li><a href="quizzes.html"><i class="fa-solid fa-circle-question" aria-hidden="true"></i> Quizzes</a></li>
+        <li><a href="emergency-info.html"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i> Emergency Information</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Safety Protocols</div>
+      <h1>Safety Protocols</h1>
+      <p>Clear before, during, and after guidance for common hazards. Tap a hazard to open its instructions.</p>
+    </div>
+  </div>
+
+  <main id="main" class="section">
+    <div class="container">
+      <div class="notice danger" role="alert"><i class="fa-solid fa-bullhorn" aria-hidden="true"></i>
+        <div><strong>In an emergency, follow your school authorities and emergency responders first.</strong> This page is general awareness information based on common Philippine disaster-preparedness guidance. It does not replace official school procedures, drills, or instructions from authorities.</div></div>
+      <div class="notice info" role="note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+        <div>Content should be reviewed against the latest guidance from agencies such as NDRRMC, PHIVOLCS, PAGASA, and BFP, and against Alangilan Senior High School's own emergency plan, before official use. See the <a href="learning.html">Learning Resources</a> page for agency websites.</div></div>
+      <p class="no-print"><button class="btn small outline" id="expand-all" type="button">Expand all</button></p>
+
+    <div class="accordion-item reveal" id="earthquake">
+      <h2 style="margin:0">
+        <button class="accordion-btn" aria-expanded="false" aria-controls="panel-earthquake" id="btn-earthquake">
+          <i class="fa-solid fa-house-crack" aria-hidden="true"></i> Earthquake Safety
+          <i class="fa-solid fa-chevron-down chev" aria-hidden="true"></i>
+        </button>
+      </h2>
+      <div class="accordion-panel" id="panel-earthquake" role="region" aria-labelledby="btn-earthquake" hidden>
+        <div class="phase-grid">
+          <div class="phase before"><h4><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i> Before</h4><ul><li>Know the sturdy desks, tables, and open spaces near your classroom, and your two nearest exits.</li><li>Know your school's assembly area and join earthquake drills seriously.</li><li>Secure heavy shelves and objects that could fall (ask teachers or staff).</li><li>Keep a go-bag ready (see the Preparedness page).</li></ul></div>
+          <div class="phase during"><h4><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> During</h4><ul><li>DROP to your hands and knees, COVER your head and neck under a sturdy desk or table, and HOLD ON.</li><li>Stay away from windows, glass, tall shelves, and anything that can fall.</li><li>If you are outdoors, move to an open area away from buildings, posts, and wires.</li><li>If you are near the coast and the shaking is strong or long, move to higher ground right after it stops.</li></ul></div>
+          <div class="phase after"><h4><i class="fa-solid fa-flag-checkered" aria-hidden="true"></i> After</h4><ul><li>Expect aftershocks. Drop, Cover, and Hold On again if shaking returns.</li><li>Check yourself and others for injuries and give basic first aid if trained.</li><li>Leave by the stairs (never the elevator) and go to the assembly area for the headcount.</li><li>Do not enter damaged buildings. If you smell gas, avoid flames and switches and tell an adult.</li><li>Follow official updates, such as those from PHIVOLCS and your local DRRM office.</li></ul></div>
+        </div>
+        <div class="notice danger"><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i><div><strong>Important warnings</strong><ul><li>Do not run during the shaking.</li><li>Do not use elevators.</li><li>Do not go back inside until authorities say it is safe.</li></ul></div></div>
+        <h3 style="color:var(--maroon)">Quick step-by-step guide</h3>
+        <ol class="steps"><li>Drop, Cover, Hold On.</li><li>Wait until the shaking stops.</li><li>Check for injuries and hazards around you.</li><li>Exit by the stairs and walk to the assembly area.</li><li>Report to your teacher for the headcount.</li></ol>
+      </div>
+    </div>
+    <div class="accordion-item reveal" id="fire">
+      <h2 style="margin:0">
+        <button class="accordion-btn" aria-expanded="false" aria-controls="panel-fire" id="btn-fire">
+          <i class="fa-solid fa-fire-flame-curved" aria-hidden="true"></i> Fire Safety
+          <i class="fa-solid fa-chevron-down chev" aria-hidden="true"></i>
+        </button>
+      </h2>
+      <div class="accordion-panel" id="panel-fire" role="region" aria-labelledby="btn-fire" hidden>
+        <div class="phase-grid">
+          <div class="phase before"><h4><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i> Before</h4><ul><li>Know two ways out of every room you use and where the fire alarm and extinguishers are.</li><li>Keep hallways and exits clear. Never block or lock fire exits.</li><li>Do not overload outlets or use damaged cords and chargers.</li><li>Join fire drills and know the sound of the fire alarm.</li></ul></div>
+          <div class="phase during"><h4><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> During</h4><ul><li>Alert others and activate the fire alarm if you can do so safely, then leave immediately.</li><li>Stay low under smoke. Check a closed door with the back of your hand: if it is hot, do not open it.</li><li>If your clothes catch fire: Stop, Drop, and Roll.</li><li>Use a fire extinguisher only on a small fire, with your exit behind you, and only if you are trained (P.A.S.S.: Pull, Aim, Squeeze, Sweep).</li></ul></div>
+          <div class="phase after"><h4><i class="fa-solid fa-flag-checkered" aria-hidden="true"></i> After</h4><ul><li>Go to the assembly area and report for the headcount.</li><li>Contact emergency services through your teacher or the school's official procedure.</li><li>Get medical help for burns or breathing in smoke, even if you feel fine.</li><li>Do not go back inside until fire officials say it is safe.</li></ul></div>
+        </div>
+        <div class="notice danger"><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i><div><strong>Important warnings</strong><ul><li>Never go back for belongings.</li><li>Never use water on electrical or cooking-oil fires.</li><li>Never use elevators during a fire.</li></ul></div></div>
+        <h3 style="color:var(--maroon)">Quick step-by-step guide</h3>
+        <ol class="steps"><li>Shout or sound the alarm.</li><li>Leave right away by the nearest safe exit.</li><li>Stay low if there is smoke.</li><li>Do not stop for your things.</li><li>Gather at the assembly area for the headcount.</li></ol>
+      </div>
+    </div>
+    <div class="accordion-item reveal" id="flood">
+      <h2 style="margin:0">
+        <button class="accordion-btn" aria-expanded="false" aria-controls="panel-flood" id="btn-flood">
+          <i class="fa-solid fa-water" aria-hidden="true"></i> Flood Safety
+          <i class="fa-solid fa-chevron-down chev" aria-hidden="true"></i>
+        </button>
+      </h2>
+      <div class="accordion-panel" id="panel-flood" role="region" aria-labelledby="btn-flood" hidden>
+        <div class="phase-grid">
+          <div class="phase before"><h4><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i> Before</h4><ul><li>Learn which areas around school and home flood easily and where the nearest higher ground is.</li><li>Follow flood and rainfall advisories from official sources.</li><li>Keep important items and your go-bag in a high, dry place.</li><li>Know your community's evacuation centers and routes.</li></ul></div>
+          <div class="phase during"><h4><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> During</h4><ul><li>Move to higher ground early. Do not wait for water to rise.</li><li>Do not walk, swim, or drive through floodwater: it can hide holes, debris, and strong currents.</li><li>Stay away from rivers, canals, and drains.</li><li>If it is safe and you are dry, switch off electricity at the main switch. Follow evacuation orders from authorities.</li></ul></div>
+          <div class="phase after"><h4><i class="fa-solid fa-flag-checkered" aria-hidden="true"></i> After</h4><ul><li>Return only when authorities say it is safe.</li><li>Avoid contact with floodwater and wear sturdy footwear when cleaning up.</li><li>Do not use wet electrical appliances. Have them checked first.</li><li>If you waded in floodwater and feel sick (for example, fever or body pain), seek medical advice.</li></ul></div>
+        </div>
+        <div class="notice danger"><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i><div><strong>Important warnings</strong><ul><li>Floodwater can be contaminated and electrically charged.</li><li>Moving water can knock you down even when it seems shallow.</li></ul></div></div>
+        <h3 style="color:var(--maroon)">Quick step-by-step guide</h3>
+        <ol class="steps"><li>Check advisories and move to higher ground.</li><li>Avoid floodwater and drains.</li><li>Switch off power if safe and dry.</li><li>Go to the evacuation center if told to.</li><li>Return home only when it is declared safe.</li></ol>
+      </div>
+    </div>
+    <div class="accordion-item reveal" id="typhoon">
+      <h2 style="margin:0">
+        <button class="accordion-btn" aria-expanded="false" aria-controls="panel-typhoon" id="btn-typhoon">
+          <i class="fa-solid fa-wind" aria-hidden="true"></i> Severe Weather &amp; Typhoon Preparedness
+          <i class="fa-solid fa-chevron-down chev" aria-hidden="true"></i>
+        </button>
+      </h2>
+      <div class="accordion-panel" id="panel-typhoon" role="region" aria-labelledby="btn-typhoon" hidden>
+        <div class="phase-grid">
+          <div class="phase before"><h4><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i> Before</h4><ul><li>Follow PAGASA weather bulletins and your school and local government announcements.</li><li>Charge phones and power banks, and prepare your go-bag.</li><li>Secure or bring in loose objects that strong wind could throw around.</li><li>Know your community's evacuation centers and how to get there.</li></ul></div>
+          <div class="phase during"><h4><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> During</h4><ul><li>Stay indoors, away from windows and glass doors.</li><li>Follow class-suspension and evacuation announcements from official sources.</li><li>If you are told to evacuate (for flooding, landslides, or storm surge), go early.</li><li>Stay inside even if it suddenly becomes calm. It may be the eye of the storm, and strong winds can return.</li></ul></div>
+          <div class="phase after"><h4><i class="fa-solid fa-flag-checkered" aria-hidden="true"></i> After</h4><ul><li>Wait for the official 'all clear' before going outside.</li><li>Watch for fallen wires, broken glass, and weak structures.</li><li>Avoid floodwater and damaged roads.</li><li>Check on neighbors, especially older people and children, if it is safe.</li></ul></div>
+        </div>
+        <div class="notice danger"><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i><div><strong>Important warnings</strong><ul><li>Do not rely on rumors or old photos. Verify with official sources.</li><li>Stay away from the coast and rivers during strong storms.</li></ul></div></div>
+        <h3 style="color:var(--maroon)">Quick step-by-step guide</h3>
+        <ol class="steps"><li>Check PAGASA and local announcements.</li><li>Prepare supplies and charge devices.</li><li>Secure loose objects.</li><li>Stay indoors or evacuate if ordered.</li><li>Wait for the all clear.</li></ol>
+      </div>
+    </div>
+    <div class="accordion-item reveal" id="electrical">
+      <h2 style="margin:0">
+        <button class="accordion-btn" aria-expanded="false" aria-controls="panel-electrical" id="btn-electrical">
+          <i class="fa-solid fa-bolt" aria-hidden="true"></i> Electrical Hazards
+          <i class="fa-solid fa-chevron-down chev" aria-hidden="true"></i>
+        </button>
+      </h2>
+      <div class="accordion-panel" id="panel-electrical" role="region" aria-labelledby="btn-electrical" hidden>
+        <div class="phase-grid">
+          <div class="phase before"><h4><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i> Before</h4><ul><li>Report exposed, frayed, or sparking wires to a teacher or maintenance staff.</li><li>Do not overload extension cords or outlets.</li><li>Keep water and liquids away from electrical equipment. Never touch switches or plugs with wet hands.</li></ul></div>
+          <div class="phase during"><h4><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> During</h4><ul><li>If you see sparks or smell burning, tell an adult and move away. Switch off the power only if it is safe to do so.</li><li>If someone is being shocked, do not touch them. Call for help right away.</li><li>If equipment catches fire, do not use water. Evacuate and alert others.</li></ul></div>
+          <div class="phase after"><h4><i class="fa-solid fa-flag-checkered" aria-hidden="true"></i> After</h4><ul><li>Do not use equipment that was shocked, burned, or damaged.</li><li>Report the problem to school maintenance or the proper authorities.</li><li>Anyone who received an electric shock should get a medical check, even if they feel fine.</li></ul></div>
+        </div>
+        <div class="notice danger"><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i><div><strong>Important warnings</strong><ul><li>Treat every fallen wire as live and dangerous.</li><li>Never use water on an electrical fire.</li></ul></div></div>
+        <h3 style="color:var(--maroon)">Quick step-by-step guide</h3>
+        <ol class="steps"><li>Stay away from the hazard.</li><li>Alert an adult.</li><li>Switch off power only if safe.</li><li>Evacuate if there is fire or heavy smoke.</li><li>Report it and get medical help if needed.</li></ol>
+      </div>
+    </div>
+    <div class="accordion-item reveal" id="general">
+      <h2 style="margin:0">
+        <button class="accordion-btn" aria-expanded="false" aria-controls="panel-general" id="btn-general">
+          <i class="fa-solid fa-bell" aria-hidden="true"></i> General Campus Emergencies
+          <i class="fa-solid fa-chevron-down chev" aria-hidden="true"></i>
+        </button>
+      </h2>
+      <div class="accordion-panel" id="panel-general" role="region" aria-labelledby="btn-general" hidden>
+        <div class="phase-grid">
+          <div class="phase before"><h4><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i> Before</h4><ul><li>Learn your school's emergency plan, alarm signals, exits, and assembly area.</li><li>Know who your class adviser and emergency coordinators are.</li><li>Take part in drills and treat them as real.</li></ul></div>
+          <div class="phase during"><h4><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> During</h4><ul><li>Stay calm and listen to your teachers, school authorities, and emergency responders.</li><li>Move in an orderly way: walk, do not run or push.</li><li>Help others who need assistance only if it is safe, and tell a teacher who needs help.</li><li>Do not spread unverified information.</li></ul></div>
+          <div class="phase after"><h4><i class="fa-solid fa-flag-checkered" aria-hidden="true"></i> After</h4><ul><li>Gather at the assembly area for the headcount.</li><li>Get first aid or medical help if you are hurt.</li><li>Wait for official instructions before returning to class or going home.</li><li>Report missing classmates or hazards to your teacher.</li></ul></div>
+        </div>
+        <div class="notice danger"><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i><div><strong>Important warnings</strong><ul><li>Always follow school authorities and emergency responders.</li><li>Do not go back inside until you are told it is safe.</li></ul></div></div>
+        <h3 style="color:var(--maroon)">Quick step-by-step guide</h3>
+        <ol class="steps"><li>Stay calm and listen.</li><li>Walk to the nearest safe exit.</li><li>Go to the assembly area.</li><li>Answer the headcount.</li><li>Wait for instructions.</li></ol>
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <!-- ===== Shared footer (same on every page) ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>S.A.A.N. LIGTAS?</h3>
+        <p>Alangilan Senior High School<br>Batangas City, Philippines</p>
+        <p class="footer-tagline">&ldquo;Prepared Today. Safer Tomorrow.&rdquo;</p>
+      </div>
+      <div>
+        <h3>Quick links</h3>
+        <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="evacuation-map.html">Evacuation Map</a></li>
+        <li><a href="safety-protocols.html">Safety Protocols</a></li>
+        <li><a href="preparedness.html">Preparedness</a></li>
+        <li><a href="learning.html">Learning Resources</a></li>
+        <li><a href="quizzes.html">Quizzes</a></li>
+        <li><a href="emergency-info.html">Emergency Information</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      &copy; <span id="year">2026</span> S.A.A.N. LIGTAS? &mdash; An academic research project. Not an official government or school publication.
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+</body>
+</html>

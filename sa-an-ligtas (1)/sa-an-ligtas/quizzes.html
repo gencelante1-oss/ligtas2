@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quizzes | S.A.A.N. LIGTAS?</title>
+  <meta name="description" content="A Web-Based School Hazard Awareness and Interactive Evacuation Mapping Platform for Emergency Preparedness for Alangilan Senior High School, Batangas City, Philippines.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Icons: Font Awesome (CDN). If offline, the site still works; icons just won't show. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <!-- ===== Shared header (same on every page) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="S.A.A.N. LIGTAS? home">
+        <svg class="brand-logo" viewBox="0 0 48 56" role="img" aria-label="S.A.A.N. LIGTAS? shield logo">
+<path d="M24 2 L45 9 L43 30 L24 53 L5 30 L3 9 Z" fill="#A30D16" stroke="#750A10" stroke-width="2"/>
+<path d="M24 6 L41 12 L39 29 L24 48 L9 29 L7 12 Z" fill="none" stroke="#fff" stroke-width="1.2"/>
+<path d="M24 13 C31 22 33 28 31 34 C29 39 26 41 24 42 C22 41 19 39 17 34 C15 28 17 22 24 13 Z" fill="#fff"/>
+<path d="M24 24 C28 29 28.5 33 26.5 36 C25.5 37.5 24.7 38 24 38.5 C23.3 38 22.5 37.5 21.5 36 C19.5 33 20 29 24 24 Z" fill="#C51F27"/>
+</svg>
+        <span>
+          <span class="brand-name">S.A.A.N. LIGTAS?</span>
+          <span class="brand-sub">A Web-Based School Hazard Awareness and Interactive Evacuation Mapping Platform for Emergency Preparedness</span>
+        </span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+        <li><a href="index.html"><i class="fa-solid fa-house" aria-hidden="true"></i> Home</a></li>
+        <li><a href="evacuation-map.html"><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i> Evacuation Map</a></li>
+        <li><a href="safety-protocols.html"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Safety Protocols</a></li>
+        <li><a href="preparedness.html"><i class="fa-solid fa-suitcase-medical" aria-hidden="true"></i> Preparedness</a></li>
+        <li><a href="learning.html"><i class="fa-solid fa-book-open" aria-hidden="true"></i> Learning Resources</a></li>
+        <li><a href="quizzes.html" class="active" aria-current="page"><i class="fa-solid fa-circle-question" aria-hidden="true"></i> Quizzes</a></li>
+        <li><a href="emergency-info.html"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i> Emergency Information</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Quizzes</div>
+      <h1>Quizzes</h1>
+      <p>Test your knowledge of earthquake, fire, flood, typhoon, and general emergency preparedness.</p>
+    </div>
+  </div>
+
+  <main id="main" class="section">
+    <div class="container quiz-box">
+
+      <!-- Start screen -->
+      <section class="card" id="quiz-start" style="text-align:center">
+        <div class="icon-badge" style="margin-inline:auto"><i class="fa-solid fa-circle-question" aria-hidden="true"></i></div>
+        <h2 style="color:var(--red-dark)">Ready to test your knowledge?</h2>
+        <p><span id="total-questions">13</span> multiple-choice questions. You get instant feedback and a short explanation after every answer.</p>
+        <button class="btn" id="start-quiz" type="button"><i class="fa-solid fa-play" aria-hidden="true"></i> Start quiz</button>
+      </section>
+
+      <!-- Question screen -->
+      <section class="card" id="quiz-play" hidden>
+        <div class="quiz-meta"><span id="q-count">Question 1</span><span id="q-score">Score: 0</span></div>
+        <div class="progress-bar" id="q-progress-track" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <div class="progress-fill" id="q-progress-fill"></div>
+        </div>
+        <p style="margin:1rem 0 0"><span class="tag" id="q-topic">Topic</span></p>
+        <h2 class="quiz-question" id="q-text">Question</h2>
+        <div class="options" id="q-options" role="group" aria-labelledby="q-text"></div>
+        <div id="q-feedback" class="feedback" role="status" aria-live="polite" hidden></div>
+        <button class="btn" id="q-next" type="button" hidden>Next question</button>
+      </section>
+
+      <!-- Results screen -->
+      <section class="card" id="quiz-result" hidden style="text-align:center">
+        <h2 tabindex="-1" style="color:var(--red-dark)">Quiz complete!</h2>
+        <div class="score-big" id="r-score">0 / 0</div>
+        <p style="font-size:1.2rem;font-weight:600" id="r-pct">0%</p>
+        <p id="r-message"></p>
+        <p>
+          <button class="btn" id="restart-quiz" type="button"><i class="fa-solid fa-rotate-right" aria-hidden="true"></i> Restart quiz</button>
+          <a class="btn outline" href="safety-protocols.html">Review safety protocols</a>
+        </p>
+      </section>
+
+      <div class="notice info" role="note" style="margin-top:1.5rem"><i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+        <div>Questions are general safety knowledge and are easy to edit in <code>js/quizzes.js</code>. Have them reviewed by your adviser or the school DRRM coordinator before classroom use.</div></div>
+    </div>
+  </main>
+
+  <!-- ===== Shared footer (same on every page) ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>S.A.A.N. LIGTAS?</h3>
+        <p>Alangilan Senior High School<br>Batangas City, Philippines</p>
+        <p class="footer-tagline">&ldquo;Prepared Today. Safer Tomorrow.&rdquo;</p>
+      </div>
+      <div>
+        <h3>Quick links</h3>
+        <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="evacuation-map.html">Evacuation Map</a></li>
+        <li><a href="safety-protocols.html">Safety Protocols</a></li>
+        <li><a href="preparedness.html">Preparedness</a></li>
+        <li><a href="learning.html">Learning Resources</a></li>
+        <li><a href="quizzes.html">Quizzes</a></li>
+        <li><a href="emergency-info.html">Emergency Information</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      &copy; <span id="year">2026</span> S.A.A.N. LIGTAS? &mdash; An academic research project. Not an official government or school publication.
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+  <script src="js/quizzes.js"></script>
+</body>
+</html>
